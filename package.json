@@ -6,8 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeloy" : "npm run dev",
-    "deploy" : "gh-pages -d dist"
+    "predeloy": "npm run dev",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "cheerio": "^1.1.0",
