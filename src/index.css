@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-black via-gray-900 to-black text-gray-100;
+  font-family: "Poppins", "Montserrat", sans-serif;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  background-repeat: repeat;
+}
+
+h1,
+h2,
+h3 {
+  @apply text-white font-extrabold drop-shadow-xl;
+}
+
+a {
+  @apply no-underline hover:underline text-indigo-300 transition-colors duration-200;
+}
+
+button {
+  @apply px-5 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold shadow-md transition-all duration-300 hover:shadow-indigo-700;
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.bg-stars {
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 4s ease-in-out infinite;
+}
